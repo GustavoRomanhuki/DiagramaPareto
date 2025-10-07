@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Diagrama de Pareto</title>
+</head>
+<body>
+    <h1>Cadastro de Defeitos/Reclamações - Diagrama de Pareto</h1>
+
+    <table id="tabela">
+        <thead>
+            <tr>
+                <th>Defeito/Reclamações</th>
+                <th>Quantidade</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody id="corpo-tabela">
+            <tr>
+                <td><input type="text" placeholder="Ex: Atraso do pedido"></td>
+                <td><input type="number" placeholder="Ex: 12"></td>
+                <td><button onclick="removerLinha(this)">Remover</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button onclick="adicionarLinha()">Adicionar Linha</button>
+    <button onclick="gerarGrafico()">Gerar Gráfico</button>
+
+    <!-- Container onde o gráfico será renderizado -->
+    <div id="chartContainer" style="height: 370px; width: 75%; margin-top: 20px;"></div>
+
+    <!-- Biblioteca CanvasJS -->
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+
+    <!-- Seu script JS -->
+    <script src="script.js"></script>
+</body>
+</html>

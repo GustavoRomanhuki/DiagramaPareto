@@ -18,7 +18,7 @@ window.onload = function () {
             return;
         }
 
-        // Ordena do maior para o menor (necessário para Pareto)
+        // Ordena do maior para o menor
         dataPoints.sort((a, b) => b.y - a.y);
 
         // Cria o gráfico principal
@@ -89,3 +89,4 @@ window.onload = function () {
         linha.remove();
     };
 };
+

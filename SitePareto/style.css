@@ -1,0 +1,54 @@
+/* Estilos principais do site */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+body{
+    background-color: #f9f2ff;
+    min-height: 100vh;
+    font: normal 16px Arial, sans-serif;
+    text-align: left;
+    color: #222;
+}
+
+p{
+    text-align: justify;
+    text-indent: 20px;
+    margin: 0 0 1rem 0;
+}
+
+h2{
+    color: #2b2b2b;
+    font-size: 28px;
+    margin: 1rem 0 0.5rem 0;
+}
+
+@media (max-width: 600px){
+    h2{ font-size: 22px; }
+}
+
+/*Deixar o texto e as imagens centralizadas*/
+.paragrafos{
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 30px auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.tabela{
+    background-color: #e385ff57;
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 950px;
+    margin: 30px auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}

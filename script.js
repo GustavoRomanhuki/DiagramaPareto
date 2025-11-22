@@ -1,5 +1,5 @@
 window.onload = function () {
-    // Função que lê os dados do HTML e gera o gráfico de Pareto
+    //lê os dados do HTML e gera o gráfico de Pareto
     window.gerarGrafico = function () {
         const linhas = document.querySelectorAll("#corpo-tabela tr");
         const dataPoints = [];
@@ -14,7 +14,7 @@ window.onload = function () {
         }
 
         if (dataPoints.length === 0) {
-            alert("Por favor, preencha ao menos um defeito e quantidade válidos.");
+            alert("É necessário preencher ao menos um defeito/valor para gerar o gráfico.");
             return;
         }
 
@@ -89,4 +89,3 @@ window.onload = function () {
         linha.remove();
     };
 };
-

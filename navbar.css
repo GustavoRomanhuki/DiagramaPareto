@@ -41,14 +41,14 @@ nav{
 }
 
 .mobile-menu{
-    cursor : pointer;
+    cursor : pointer; 
 }
 
 .mobile-menu div{
     width: 32px;
     height: 2px;
-    background: #ffff;
-    margin: 8px;
+    background: #ffffff;
+    margin: 7px; 
 }
 
 @media(max-width: 999px){

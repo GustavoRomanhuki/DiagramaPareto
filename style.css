@@ -51,4 +51,60 @@ h2{
     max-width: 950px;
     margin: 30px auto;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+.fotoPareto{
+    text-align: center;
+    margin-top: 20px 0;
+}
+.fotoPareto img{
+    display: inline-block
+}
+
+.defeitoTabela{
+    text-align: center;
+    margin-top: 20px;
+}
+.defeitoTabela img{
+    display: inline-block
+}
+
+.frequenciaTabela{
+    text-align: center;
+    margin-top: 20px;
+}
+.frequenciaTabela img{
+    display: inline-block
+}
+
+.decrescenteTabela{
+    text-align: center;
+    margin-top: 20px;
+}
+.decrescenteTabela img{
+    display: inline-block
+}
+
+.totalTabela{
+    text-align: center;
+    margin-top: 20px;
+}
+.totalTabela img{
+    display: inline-block
+}
+
+.frequenciaAcumulada{
+    text-align: center;
+    margin-top: 20px;
+}
+.frequenciaAcumulada img{
+    display: inline-block
+}
+.formulaTabela{
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.formulaTabela img{
+    display: inline-block
 }

@@ -1,4 +1,4 @@
-/* Estilos principais do site */
+/* Partes principais do site */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 *{
@@ -56,6 +56,7 @@ h2{
 .fotoPareto{
     text-align: center;
     margin-top: 20px 0;
+    box-sizing: border-box;
 }
 .fotoPareto img{
     display: inline-block
@@ -64,6 +65,7 @@ h2{
 .defeitoTabela{
     text-align: center;
     margin-top: 20px;
+    box-sizing: border-box;
 }
 .defeitoTabela img{
     display: inline-block
@@ -72,6 +74,7 @@ h2{
 .frequenciaTabela{
     text-align: center;
     margin-top: 20px;
+    box-sizing: border-box;
 }
 .frequenciaTabela img{
     display: inline-block
@@ -80,6 +83,7 @@ h2{
 .decrescenteTabela{
     text-align: center;
     margin-top: 20px;
+    box-sizing: border-box;
 }
 .decrescenteTabela img{
     display: inline-block
@@ -88,6 +92,7 @@ h2{
 .totalTabela{
     text-align: center;
     margin-top: 20px;
+    box-sizing: border-box;
 }
 .totalTabela img{
     display: inline-block
@@ -96,6 +101,7 @@ h2{
 .frequenciaAcumulada{
     text-align: center;
     margin-top: 20px;
+    box-sizing: border-box;
 }
 .frequenciaAcumulada img{
     display: inline-block
@@ -104,6 +110,7 @@ h2{
     text-align: left;
     margin-left: 100px;
     margin-top: 20px;
+    box-sizing: border-box;
 }
 .formulaTabela img{
     display: inline-block

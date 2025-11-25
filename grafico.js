@@ -22,7 +22,7 @@ window.onload = function () {
         dataPoints.sort((a, b) => b.y - a.y);
 
         // Cria o gráfico principal
-        var chart = new CanvasJS.Chart("chartContainer", {
+        var chart = new CanvasJS.Chart("tabelaGrafico", {
             title: {
                 text: "Diagrama de Pareto"
             },
@@ -33,7 +33,7 @@ window.onload = function () {
                 labelFontColor: "#4F81BC"
             },
             axisY2: {
-                title: "Percentual acumulado",
+                title: "(%)Percentual acumulado",
                 suffix: "%",
                 lineColor: "#C0504E",
                 tickColor: "#C0504E",

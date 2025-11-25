@@ -1,119 +1,196 @@
-/* Partes principais do site */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* estilos principais */
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');*/
 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: "Elms Sans", sans-serif;
 }
 
-body{
-    background-color: #f9f2ff;
-    min-height: 100vh;
-    font: normal 16px Arial, sans-serif;
-    text-align: left;
-    color: #222;
-}
-
-p{
+p {
     text-align: justify;
     text-indent: 20px;
-    margin: 0 0 1rem 0;
+    margin: 0 0 3rem 0;
 }
 
-h2{
-    color: #2b2b2b;
-    font-size: 28px;
-    margin: 1rem 0 0.5rem 0;
+h2 {
+    color: #0e1769;
+    font-size: 30px;
+    margin: 1rem 0 1rem 0;
 }
 
-@media (max-width: 600px){
-    h2{ font-size: 22px; }
+@media (max-width: 600px) {
+    h2 {
+        font-size: 22px;
+    }
 }
 
 /*Deixar o texto e as imagens centralizadas*/
-.paragrafos{
+.paragrafos {
     background-color: #ffffff;
     padding: 25px;
     border-radius: 8px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 30px auto;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
     font-size: 18px;
     line-height: 1.6;
 }
 
-.tabela{
-    background-color: #e385ff57;
-    padding: 25px;
-    border-radius: 8px;
-    max-width: 950px;
-    margin: 30px auto;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    box-sizing: border-box;
-}
-.fotoPareto{
+.fotoPareto {
     text-align: center;
     margin-top: 20px 0;
     box-sizing: border-box;
 }
-.fotoPareto img{
+
+.fotoPareto img {
     display: inline-block
 }
 
-.defeitoTabela{
+.defeitoTabela {
     text-align: center;
     margin-top: 20px;
     box-sizing: border-box;
 }
-.defeitoTabela img{
-    display: inline-block
+
+.defeitoTabela img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
-.frequenciaTabela{
+.frequenciaTabela {
     text-align: center;
     margin-top: 20px;
     box-sizing: border-box;
 }
-.frequenciaTabela img{
-    display: inline-block
+
+.frequenciaTabela img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
-.decrescenteTabela{
+.decrescenteTabela {
     text-align: center;
     margin-top: 20px;
     box-sizing: border-box;
 }
-.decrescenteTabela img{
-    display: inline-block
+
+.decrescenteTabela img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
-.totalTabela{
+.totalTabela {
     text-align: center;
     margin-top: 20px;
     box-sizing: border-box;
 }
-.totalTabela img{
-    display: inline-block
+
+.totalTabela img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
-.frequenciaAcumulada{
+.frequenciaAcumulada {
     text-align: center;
     margin-top: 20px;
     box-sizing: border-box;
 }
-.frequenciaAcumulada img{
-    display: inline-block
+
+.frequenciaAcumulada img {
+    display: block;
+    margin: 0 auto;
+    max-width: 60%;
+    height: auto;
 }
-.formulaTabela{
-    text-align: left;
-    margin-left: 100px;
+
+.formulaTabela {
+    margin-top: 20px;
+}
+
+.formulaTabela img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.eixoHorizontal {
+    text-align: center;
     margin-top: 20px;
     box-sizing: border-box;
 }
-.formulaTabela img{
-    display: inline-block
+
+.eixoHorizontal img {
+    display: block;
+    margin: 0 auto;
+    max-width: 60%;
+    height: auto;
 }
 
+.eixoVertical {
+    text-align: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
 
+.eixoVertical img {
+    display: block;
+    margin: 0 auto;
+    max-width: 60%;
+    height: auto;
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #da7fe2;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.btn-default:hover {
+    background-color: #c76ed1;
+}
+.pareto1{
+    text-align: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.pareto img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.pareto2{
+   text-align: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.pareto2 img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}

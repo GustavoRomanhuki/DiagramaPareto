@@ -1,118 +1,214 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!--chama os .css necessários-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="tabela.css">
+    <link rel="stylesheet" href="header.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Diagrama de Pareto</title>
 </head>
+
 <body>
-    <header>    
-        <nav>
-        <a class ="logo" href="/">DIAGRAMA DE PARETO</a>
-        <div class = "mobile-menu"> <!--menu sanduiche-->
-            <div class = "line1"></div>
-            <div class = "line2"></div>
-            <div class = "line3"></div>
-        </div>
-        <ul class="nav-list">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#comoFazer">Como fazer</a></li>
-            <li><a href="#Grafico">Gerar gráfico</a></li>
-        </ul>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-chart-line" id="nav_logo"> DIAGRAMA DE PARETO</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#comoFazer">Como fazer</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Referencias">Referências</a>
+                </li>
+            </ul>
+
+            <button class="btn-default" onclick="gerarGrafico()">
+                Construir gráfico
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
+
+        <div id="mobile_menu">
+
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#comoFazer">Como fazer</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Grafico">Gerar gráfico</a>
+                </li>
+            </ul>
+
+        </div>
+
     </header>
     <main>
         <div class="paragrafos">
             <section id="sobre">
                 <h2>Como surgiu o Diagrama de Pareto?</h2>
                 <p>
-                    Vilfredo Pareto foi um economista que observou um padrão na distribuição de renda na Inglaterra durante o século XIX, ele percebeu que uma pequena parcela da população tinha a maior parte da riqueza, equanto a restante maioria continha a menor parte. Essa análise ficou conhecido como <strong>Princípio de Pareto</strong> ou <strong>Regra 80/20</strong>, que afirma que grande parte dos problemas ocorre por um número pequeno de causas.
-                </p> 
-                <p>
-                    Posteriormente, o guru da qualidade Joseph Juran migrou  esse princípio ao ambiente organizacional e desenvolveu o Diagrama de Pareto, uma ferramenta gráfica utilizada para identificar e priorizar as causas mais importantes de um problema. Juran observou que, assim como na economia, a maior parte dos problemas de um processo costuma ser originada por poucas causas fundamentais.
+                    Vilfredo Pareto foi um economista e sociólogo italiano formado na Universidade Politécnina de Turim na Itália, que conduziu um estudo sobre a distribuição de renda na Itália durante o final do século XIX, ele percebeu que uma pequena parcela da população (aproximadamente 20%) tinha a maior parte da riqueza, enquanto a restante maioria (aproximadamente 80%) continha a menor parte. Esse estudo ficou conhecido como <strong>Princípio de Pareto</strong>. 
+	                Pareto também identificou essa relação na forma como a população era distribuída ao longo da Itália, respeitando o mesmo padrão de desproporcionalidade.
                 </p>
+                
+                <p>
+                  	Posteriormente, o guru da qualidade Joseph Juran migrou esse princípio para a área da qualidade e desenvolveu o <strong>Diagrama de Pareto </strong>(também conhecido como <strong>Regra 80/20</strong>), uma ferramenta gráfica utilizada para identificar e priorizar as causas mais importantes. Juran observou que, assim como na economia, a maior parte dos problemas de um processo costuma ser originada por uma minoria de causas.
+
+                </p>
+            </section>
+            <div class="fotoPareto"> <img src="img/VilfredoPareto.jpg" alt="Vilfredo Pareto" width="150px"
+                    height="200px"> </div>
+            <br>
+            <br>
+            <br>
+            <br>
+    
+            <h2>O que é o conceito 80/20?</h2>
+            <p>
+                O princípio 80/20, também nomeado de Princípio de Pareto, afirma que a minoria dos fatores leva a
+                maioria dos resultados ou consequências. Assim evidenciando um desequilíbrio entre causas e resultados.
+                Ou seja, se focar seus esforços em 20% das causas, você pode resolver 80% dos problemas, economizando
+                tempo e dinheiro.
+            </p>
+            <div class="pareto1" > 
+                <img src="img/pareto1.png" alt="diagrama de pareto">
+            </div>
+            <div class="pareto2" > 
+                <img src="img/pareto2.png" alt="diagrama de pareto">
+            </div>
+            <br> 
+            <br>
+            <br>
+            <br>
+
+
+            <section id="comoFazer"> </section>
+           
+            <h2>Como construir o Diagrama de Pareto?</h2>
+            <p>
+                <strong>Para construir um Diagrama de Pareto, é necessário seguir os passos:</strong>
+            </p>
+            <ol>
+                <li>Elencar os problemas em categorias para análise:</li>
+                <div class="defeitoTabela"> <img src="img/defeitosTabela.png" alt="defeitos tabela"></div>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <li>Reunir dados sobre esses problemas (com qual frequência ocorrem):</li>
+
+                <div class="frequenciaTabela"> <img src="img/frequenciaTabela.png" alt="frequencia tabela"></div>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <li>Ordenar as categorias por ordem decrescente de frequência:</li>
+                <div class="decrescenteTabela"> <img src="img/decrescenteTabela.png" alt="decrescente tabela"></div>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <li>Calcular a frequência total das categorias:</li>
+                <div class="totalTabela"> <img src="img/totalTabela.png" alt="total tabela"></div>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <li>Calcular a frequência acumulada:</li>
+                <div class="formulaTabela"> <img src="img/formulaTabela.png" alt="formula tabela"></div>
+                <div class="frequenciaAcumulada"> <img src="img/frequenciaAcumulada.png" alt=" frequencia acumulada">>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <li>Traçar o eixo horizontal e listar as categorias da esquerda para a direita seguindo a ordem
+                    decrescente, depois colocar suas respectivas frequências.</li>
+                <div class="eixoHorizontal">
+                    <img src="img/eixoHorizontal.png" alt="eixo horizontal">
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <li>Traçar o eixo vertical (frequência acumulada) na direita, podendo assim construir o gráfico de curva
+                </li>
+                <div class="eixoVertical">
+                    <img src="img/eixoVertical.png" alt="eixo vertical">
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <li>Analisar o gráfico e identificar a relação 80/20 e sua respectiva ordem de prioridade</li>
+                <div>[imagem]</div>
                 </section>
-                <div class ="fotoPareto"> <img src = "img/VilfredoPareto.jpg" alt="Vilfredo Pareto" width="150px" height="200px"> </div>
-                <br>
-                <h2>O que é o conceito 80/20?</h2>
-                <p>
-                    O princípio 80/20, também nomeado de Princípio de Pareto, afirma que a minoria dos fatores leva a maioria dos resultados ou consequências. Assim evidenciando um desequilíbrio entre causas e resultados. Ou seja, se focar seus esforços em 20% das causas, você pode resolver 80% dos problemas, economizando tempo e dinheiro. Pode-se observar esse princípio em diversas áreas, como: saúde, 
-                <div> [imagem] </div>
-                <br>
-        
-                <section id="comoFazer"></section>
-                <h2>Como construir o Diagrama de Pareto?</h2>
-                <p>
-                    Para construir um Diagrama de Pareto, é necessário seguir os seguintes passos:
-                </p>
-                <ol>
-                    <li>Elencar os problemas em categorias para análise</li>
-
-                    <div class="defeitoTabela"> <img src ="img/defeitosTabela.png" alt="defeitos tabela" width="150px" height="150px"></div>
-
-                    <li>Reunir dados sobre esses problemas (com qual frequência ocorrem)</li>
-
-                    <div class ="frequenciaTabela"> <img src ="img/frequenciaTabela.png" alt="frequencia tabela" width="300px" height="100px"></div>
-
-                    <li>Ordenar as categorias por ordem decrescente de frequência</li>
-
-                    <div class="decrescenteTabela"> <img src ="img/decrescenteTabela.png" alt="decrescente tabela" width="300px" height="110px"></div>
-
-                    <li>Calcular a frequência total das categorias</li>
-
-                    <div class="totalTabela"> <img src ="img/totalTabela.png" alt="total tabela" width="300px" height="110px"></div>
-
-                    <li>Calcular a frequência acumulada</li>
-
-                    <div class="formulaTabela"> <img src ="img/formulaTabela.png" alt="formula tabela" width="450px" height="300px"></div>
-                    <div class="frequenciaAcumulada"> <img src ="img/frequenciaAcumulada.png" alt=" frequencia acumulada" width="400px" height="150px">></div>
-
-                    <li>Traçar o eixo horizontal e listar as categorias da esquerda para a direita seguindo a ordem decrescente</li>
-                    <li>Traçar os dois eixos verticais (frequência, frequência acumulada) </li>
-                    <li>Analisar o gráfico e identificar a relação 80/20 e sua respectiva ordem de prioridade</li>
-                    <li></li>
-                </section>     
+            
         </div>
 
-<!--Informações da tabela-->>
+        <!--Informações da tabela-->>
         <div class="tabela">
             <h1>Cadastro de Defeitos/Reclamações</h1>
             <section id="Grafico">
                 <table id="tabela">
                     <thead>
                         <tr>
-                        <th>Defeito/Reclamações</th>
-                        <th>Quantidade</th>
-                        <th>Remover</th>
+                            <th>Defeito/Reclamações</th>
+                            <th>Quantidade</th>
+                            <th>Remover</th>
                         </tr>
                     </thead>
 
                     <tbody id="corpo-tabela">
                         <tr>
-                        <td><input type="text" placeholder="Ex: Atraso do pedido"></td>
-                        <td><input type="number" placeholder="Ex: 12"></td>
-                        <td><button onclick="removerLinha(this)">Remover</button></td>
-                    </tr>
+                            <td><input type="text" placeholder="Ex: Peça quebrada"></td>
+                            <td><input type="number" placeholder="Ex: 12"></td>
+                            <td><button onclick="removerLinha(this)">Remover</button></td>
+                        </tr>
                     </tbody>
                 </table>
             </section>
-    <button onclick="adicionarLinha()">Adicionar Linha</button>
-    <button onclick="gerarGrafico()">Gerar Gráfico</button>
+            <button onclick="adicionarLinha()">Adicionar Linha</button>
+            <button onclick="gerarGrafico()">Gerar Gráfico</button>
 
-    <!-- janela que mostra o gráfico -->
-    <div id="chartContainer" style="height: 370px; width: 75%; margin-top: 20px;"></div>
-
-    <!-- biblioteca do gráfico -->
-    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+            <!-- janela que mostra o gráfico -->
+            <div id="tabelaGrafico"></div>
         </div>
-    <!--jscripst-->
-    <script src="grafico.js"></script>>
-    <script src="mobileNavbar.js"></script>
+            <!-- biblioteca do gráfico -->
+            <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+
+        <!--jscripst-->
+        <script src="grafico.js"></script>>
+        <script src="mobileNavbar.js"></script>
+        <script src="script.js"></script>
     </main>
 
-  
+
 </body>
+
 </html>

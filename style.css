@@ -111,7 +111,7 @@ h2 {
 .frequenciaAcumulada img {
     display: block;
     margin: 0 auto;
-    max-width: 60%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -153,6 +153,7 @@ h2 {
 }
 
 .btn-default {
+    text-decoration: none;
     border: none;
     display: flex;
     align-items: center;
@@ -169,28 +170,71 @@ h2 {
 .btn-default:hover {
     background-color: #c76ed1;
 }
-.pareto1{
+
+.pareto1 {
     text-align: center;
     margin-top: 20px;
     box-sizing: border-box;
 }
 
-.pareto img{
+.pareto img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
     height: auto;
 }
 
-.pareto2{
-   text-align: center;
+.pareto2 {
+    text-align: center;
     margin-top: 20px;
     box-sizing: border-box;
 }
 
-.pareto2 img{
+.pareto2 img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
     height: auto;
+}
+
+.espaco {
+    margin-top: 400px;
+    text-align: center;
+}
+
+#referencias {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f6ecfa;
+    border-left: 4px solid #7b22ce;
+    border-radius: 8px;
+    max-width: 900px;
+}
+
+#referencias h2 {
+    color: #7b22ce;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.lista-referencias {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-referencias li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 1em;
+    color: #333;
+}
+
+.lista-referencias a {
+    color: #7b22ce;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.lista-referencias a:hover {
+    text-decoration: underline;
 }

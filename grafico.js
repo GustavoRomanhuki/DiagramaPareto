@@ -19,9 +19,10 @@ window.onload = function () {
         }
 
         // Ordena do maior para o menor
+
         dataPoints.sort((a, b) => b.y - a.y);
 
-        // Cria o gráfico principal
+        // Cria o gráfico
         var chart = new CanvasJS.Chart("tabelaGrafico", {
             title: {
                 text: "Diagrama de Pareto"
@@ -70,6 +71,7 @@ window.onload = function () {
         chart.data[1].set("axisYType", "secondary", false);
         chart.axisY[0].set("maximum", yTotal);
         chart.axisY2[0].set("maximum", 100);
+
     }
 
     // Mesmas funções para adicionar e remover linhas

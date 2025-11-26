@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!--chama os .css necessários-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="tabela.css">
@@ -30,13 +30,13 @@
                     <a href="#comoFazer">Como fazer</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#Referencias">Referências</a>
+                    <a href="#referencias">Referências</a>
                 </li>
             </ul>
 
-            <button class="btn-default" onclick="gerarGrafico()">
-                Construir gráfico
-            </button>
+            <a href="#GerarGrafico" class="btn-default">
+                Construir Gráfico
+            </a>
 
             <button id="mobile_btn">
                 <i class="fa-solid fa-bars"></i>
@@ -53,7 +53,7 @@
                     <a href="#comoFazer">Como fazer</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#Grafico">Gerar gráfico</a>
+                    <a href="#gerar">Gerar gráfico</a>
                 </li>
             </ul>
 
@@ -65,12 +65,20 @@
             <section id="sobre">
                 <h2>Como surgiu o Diagrama de Pareto?</h2>
                 <p>
-                    Vilfredo Pareto foi um economista e sociólogo italiano formado na Universidade Politécnina de Turim na Itália, que conduziu um estudo sobre a distribuição de renda na Itália durante o final do século XIX, ele percebeu que uma pequena parcela da população (aproximadamente 20%) tinha a maior parte da riqueza, enquanto a restante maioria (aproximadamente 80%) continha a menor parte. Esse estudo ficou conhecido como <strong>Princípio de Pareto</strong>. 
-	                Pareto também identificou essa relação na forma como a população era distribuída ao longo da Itália, respeitando o mesmo padrão de desproporcionalidade.
+                    Vilfredo Pareto foi um economista e sociólogo italiano que conduziu um estudo sobre a distribuição
+                    de renda na Itália durante o final do século XIX, ele percebeu que uma pequena parcela da população
+                    (aproximadamente 20%) tinha a maior parte da riqueza, enquanto a restante maioria (aproximadamente
+                    80%) continha a menor parte. Esse estudo ficou conhecido como <strong>Princípio de Pareto</strong>.
+                    Pareto também identificou que a população era distribuída de forma desigual ao longo da Itália,
+                    seguindo o mesmo padrão de desproporcionalidade.
                 </p>
-                
+
                 <p>
-                  	Posteriormente, o guru da qualidade Joseph Juran migrou esse princípio para a área da qualidade e desenvolveu o <strong>Diagrama de Pareto </strong>(também conhecido como <strong>Regra 80/20</strong>), uma ferramenta gráfica utilizada para identificar e priorizar as causas mais importantes. Juran observou que, assim como na economia, a maior parte dos problemas de um processo costuma ser originada por uma minoria de causas.
+                    Posteriormente, o guru da qualidade Joseph Juran migrou esse princípio para a área da qualidade e
+                    desenvolveu o <strong>Diagrama de Pareto </strong>(também conhecido como <strong>Regra
+                        80/20</strong>), uma ferramenta gráfica utilizada para identificar e priorizar as causas mais
+                    importantes. Juran observou que, assim como na economia, a maior parte dos problemas de um processo
+                    costuma ser originada por um grupo seleto de causas.
 
                 </p>
             </section>
@@ -80,7 +88,7 @@
             <br>
             <br>
             <br>
-    
+
             <h2>O que é o conceito 80/20?</h2>
             <p>
                 O princípio 80/20, também nomeado de Princípio de Pareto, afirma que a minoria dos fatores leva a
@@ -88,20 +96,20 @@
                 Ou seja, se focar seus esforços em 20% das causas, você pode resolver 80% dos problemas, economizando
                 tempo e dinheiro.
             </p>
-            <div class="pareto1" > 
+            <div class="pareto1">
                 <img src="img/pareto1.png" alt="diagrama de pareto">
             </div>
-            <div class="pareto2" > 
+            <div class="pareto2">
                 <img src="img/pareto2.png" alt="diagrama de pareto">
             </div>
-            <br> 
+            <br>
             <br>
             <br>
             <br>
 
 
             <section id="comoFazer"> </section>
-           
+
             <h2>Como construir o Diagrama de Pareto?</h2>
             <p>
                 <strong>Para construir um Diagrama de Pareto, é necessário seguir os passos:</strong>
@@ -138,7 +146,8 @@
 
                 <li>Calcular a frequência acumulada:</li>
                 <div class="formulaTabela"> <img src="img/formulaTabela.png" alt="formula tabela"></div>
-                <div class="frequenciaAcumulada"> <img src="img/frequenciaAcumulada.png" alt=" frequencia acumulada">>
+                <br>
+                <div class="frequenciaAcumulada"> <img src="img/frequenciaAcumulada.png" alt=" frequencia acumulada">
                 </div>
                 <br>
                 <br>
@@ -166,15 +175,15 @@
                 <br>
 
                 <li>Analisar o gráfico e identificar a relação 80/20 e sua respectiva ordem de prioridade</li>
-                <div>[imagem]</div>
+                <div></div>
                 </section>
-            
+
         </div>
 
-        <!--Informações da tabela-->>
+        <!--Informações da tabela-->
         <div class="tabela">
-            <h1>Cadastro de Defeitos/Reclamações</h1>
-            <section id="Grafico">
+            <section id="GerarGrafico">
+                <h1 id="gerar">Cadastro de Defeitos/Reclamações</h1>
                 <table id="tabela">
                     <thead>
                         <tr>
@@ -193,21 +202,61 @@
                     </tbody>
                 </table>
             </section>
+
             <button onclick="adicionarLinha()">Adicionar Linha</button>
             <button onclick="gerarGrafico()">Gerar Gráfico</button>
 
             <!-- janela que mostra o gráfico -->
             <div id="tabelaGrafico"></div>
         </div>
-            <!-- biblioteca do gráfico -->
-            <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
 
+        <div class="espaco"></div>
+        </div>
+
+        <section id="referencias">
+            <h2>Referências</h2>
+            <ul class="lista-referencias">
+                <li>
+                    PARETO, Vilfredo. <em>Princípio de Pareto: conceito 80/20</em>.
+                    Disponível em:
+                    <a href="https://books.google.com.br/books?hl=pt-BR&lr=&id=FnOoEAAAQBAJ&oi=fnd&pg=PT2&dq=conceito+80/20&ots=ntKKfI7f2U&sig=jiM6m-HZg5cNx65Hi26fpTZ72bs&redir_esc=y#v=onepage&q=conceito%2080%2F20&f=false"
+                        target="_blank">
+                        Google Books
+                    </a>. Acesso em: 20 out. 2025.
+                </li>
+
+                <li>
+                    MARTÍNEZ, J. <em>Diagrama de Pareto</em>.
+                    Disponível em:
+                    <a href="https://d1wqtxts1xzle7.cloudfront.net/44144377/Diagramde_pareto-libre.pdf" target="_blank">
+                    </a>. Acesso em: 27 out. 2025.
+                </li>
+
+                <li>
+                    PALADINI, Edson Pacheco. <em>Gestão da qualidade: teoria e prática</em>. São Paulo: Atlas, 2019.
+                </li>
+
+                <li>
+                    UNIVERSIDADE FEDERAL DE SERGIPE. <em>Diagrama de Pareto: verificação</em>.
+                    Disponível em:
+                    <a href="https://ri.ufs.br/bitstream/riufs/12564/2/DiagramaParetoVerificacao.pdf" target="_blank">
+                        Repositório UFS
+                    </a>. Acesso em: 10 nov. 2025.
+                </li>
+
+                <li>
+                    JURAN, Joseph M. <em>Quality Control Handbook</em>. New York: McGraw-Hill, 1999.
+                </li>
+            </ul>
+        </section>
+
+        <!-- biblioteca do gráfico -->
+        <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
         <!--jscripst-->
         <script src="grafico.js"></script>>
         <script src="mobileNavbar.js"></script>
         <script src="script.js"></script>
     </main>
-
 
 </body>
 

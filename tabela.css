@@ -1,90 +1,40 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Elms Sans", sans-serif;
+.tabela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    text-align: center;
 }
 
-    .tabela {
-        width: 100%;
-        margin:20px auto;
-        padding: 20px;
-        height: auto;
-    
-    }
+#tabela {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
 
-    .tabela h1 {
-        text-align: center;
-        margin-bottom: 20px;
-        font-size: 26px;
-        color: #000000;
-        font-weight: 600;
-    }
+#tabela td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
 
-    .tabela {
-        width: 100%;
-        border-collapse: collapse;
-    }
+#tabela th {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
 
-    .tabela th {
-        background: #b244e6;
-        color: #f7f7f7;
-        padding: 12px;
-        font-size: 16px;
-        text-align: left;
-        border-radius: 6px
-    }
+button {
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
-    .tabela td {
-        padding: 10px;
-        border-radius: 8px;
-    }
-
-    .tabela tr:nth-child(even) {
-        background: #802da1b7;
-    }
-
-    .tabela tr:hover {
-        background-color: #b671b893;
-        transition: 0.2s;
-    }
-
-    input[type="text"],
-    input[type="number"] {
-        width: 95%;
-        padding: 10px;
-        border: 2px solid #d0d4ff;
-        border-radius: 8px;
-        font-size: 14px;
-    }
-
-    button {
-        padding: 8px 14px;
-        border-radius: 8px;
-        border: none;
-        cursor: pointer;
-        font-size: 14px;
-        transition: 0.3s;
-    }
-
-    button:hover {
-        opacity: 0.6;
-    }
-
-    button[onclick="adicionarLinha()"] {
-        background: #9f40ec;
-        color: rgb(255, 255, 255);
-        margin-right: 10px;
-    }
-
-    button[onclick="gerarGrafico()"] {
-        background: #e563ff;
-        color: white;
-    }
-
-    td button {
-        background: #f566a8;
-        color: rgb(255, 255, 255);
-    }
-
-   
+#tabelaGrafico {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
